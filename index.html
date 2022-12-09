@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="spa">
+            <div class="header">
+                <h1>Калькулятор стоимости</h1>
+                <h2>мягкой мебели</h2>
+            </div>
+
+            <div class="spa-body">
+                <p class="choice">Выберите тип мебели</p>
+                    <div class="sample-cbox">
+                        <label for="i71">Диван</label>
+                        <input id="r1" type="radio" class="i-7" checked name="rb-1" value = '1'> 
+                    </div>
+                    <div class="sample-cbox">
+                        <label for="i72">Кресло</label>
+                        <input id="r2" type="radio" class="i-7" name="rb-1" value='2'>
+                    </div>
+                    <div class="sample-cbox">
+                        <label for="i73">Стул</label>
+                        <input id="r3" type="radio" class="i-7" name="rb-1" value="3">
+                    </div>
+                <p class="choice">Выберите тип ткани</p>
+                    <div class="sample-cbox">
+                        <p>Кожа</p>
+                        <input id="r4" type="radio" class="check" checked name="rb-2" value="4">
+                    </div>
+                    <div class="sample-cbox">
+                        <p>Текстиль</p>
+                        <input id="r5" type="radio" class="check" name="rb-2" value="5">
+                    </div>
+                <p class="choice">Введите размеры изделия в метрах квадратных, целым числом</p>
+                <input id="i-1">
+                <button onclick="check()">Рассчитать</button>
+                <div class="out"></div>
+                <p class="itog" >Приблизительная стоимость</p><input type="text" class="i" id="rezult">
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
